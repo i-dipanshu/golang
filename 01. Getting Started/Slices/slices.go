@@ -35,7 +35,10 @@ func main() {
 	highscore = append(highscore[1:3])
 	fmt.Println(highscore)
 
-	
+	var courses = []int{1, 2, 3, 4, 5}
+	index := 2
+	courses = append(courses[:index], courses[index + 1: ]... )
+	fmt.Println("Courses = ", courses)
 
 
 }
